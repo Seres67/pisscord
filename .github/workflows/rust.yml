@@ -27,13 +27,11 @@ jobs:
       - name: install tailwindind cli (ubuntu)
         if: matrix.platform == 'ubuntu-20.04'
         run:
-          wget -O tailwindcss "https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64"
-          chmod +x tailwindcss
+          wget -O tailwindcss "https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64" && chmod +x tailwindcss
       - name: install tailwindind cli (macos)
         if: matrix.platform == 'macos-latest'
         run:
-          wget -O tailwindcss "https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-macos-x64"
-          chmod +x tailwindcss
+          wget -O tailwindcss "https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-macos-x64" && chmod +x tailwindcss
 #      - name: install tailwindind cli (win)
 #        if: matrix.platform == 'windows-latest'
 #        run:
