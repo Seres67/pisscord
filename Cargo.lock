@@ -550,30 +550,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "discord-clone"
-version = "0.0.0"
-dependencies = [
- "lazy_static",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
-]
-
-[[package]]
-name = "discord-clone-ui"
-version = "0.0.0"
-dependencies = [
- "gloo-timers",
- "js-sys",
- "serde",
- "serde-wasm-bindgen",
- "sycamore",
- "wasm-bindgen",
- "wasm-bindgen-futures",
-]
-
-[[package]]
 name = "dispatch"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1981,6 +1957,38 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
+name = "pisscord-client"
+version = "0.0.0"
+dependencies = [
+ "gloo-timers",
+ "js-sys",
+ "serde",
+ "serde-wasm-bindgen",
+ "sycamore",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+]
+
+[[package]]
+name = "pisscord-server"
+version = "0.1.0"
+dependencies = [
+ "hyper",
+ "tokio",
+]
+
+[[package]]
+name = "pisscord-ui"
+version = "0.0.0"
+dependencies = [
+ "lazy_static",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+]
+
+[[package]]
 name = "pkg-config"
 version = "0.3.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2444,14 +2452,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
-]
-
-[[package]]
-name = "server"
-version = "0.1.0"
-dependencies = [
- "hyper",
- "tokio",
 ]
 
 [[package]]

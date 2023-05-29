@@ -1,5 +1,5 @@
 [package]
-name = "discord-clone-ui"
+name = "pisscord-client"
 version = "0.0.0"
 edition = "2021"
 
@@ -12,6 +12,3 @@ wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
 wasm-bindgen-futures = "0.4"
 sycamore = { version = "0.8", features = ["suspense"] }
 gloo-timers = { version = "0.2.6", features = ["futures"] }
-
-#[workspace]
-#members = ["src-tauri"]
